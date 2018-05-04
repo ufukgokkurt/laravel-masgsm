@@ -1,0 +1,22 @@
+{
+    "name": "ufukgokkurt/masgsm",
+    "description": "Laravel 5  için Masgsm SMS Kütüphanesi",
+    "type": "laravel",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ufuk GÖKKURT",
+            "email": "ufuk.gokkurt@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.5.9",
+        "illuminate/support": "5.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ufukgokkurt\\Masgsm\\": "src/"
+        }
+    }
+}
