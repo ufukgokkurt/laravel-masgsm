@@ -1,8 +1,9 @@
-#Laravel 5 için  Masgsm SMS
-
+Laravel 5 için  Masgsm SMS
+=========
 Laravel 5.x   projelerinizde [Masgsm](https://www.masgsm.com.tr) altyapısını kullanarak tekli veya çoklu sms gönderebilir,SMS raporlarını ve bakiyenizi  sorgulayabilirsiniz.
 
-##Kurulum
+Kurulum
+-------
 * Paketi projenize eklemek için aşağıdaki komutu kullanınız.
 ```bash
 composer require ufukgokkurt/masgsm
@@ -21,8 +22,8 @@ Ufukgokkurt\Masgsm\MasgsmServiceProvider::class,
  ```
  * config/masgsm.php dosyası paylaşılacak. Burada Masgsm için size atanan kullanıcı adı, parola ve başlık  değerlerini doldurmalısınız. Ayrıca .env dosyanıza MASGSM_USER, MASGSM_PASS ve MASGSM_DEFAULT_TITLE değerlerini ekleyerek config dosyanızı besleyebilirsiniz.
  
- ##Kullanım
- 
+ Kullanım
+ --------
  
  * Tek bir mesaj metnini bir veya birden fazla numaraya göndermek için
  ```bash
@@ -59,5 +60,6 @@ Ufukgokkurt\Masgsm\MasgsmServiceProvider::class,
   $smsID=123456;
   Masgsm::checkReport($smsID); // Dizi olarak döner
    ```  
-   ##Not
+  Not
+  ----
   Mesaj içeriğindeki TR karekterler  otomatik olarak değiştirilmektedir. Bunun için ekstra birşey yapmanıza gerek yoktur.
